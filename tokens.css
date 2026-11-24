@@ -1,0 +1,17 @@
+/* tuvl design tokens (skill: tuvl-design). The tuvl look, as on tuvl.io, tuvl.dev and Insight: zinc neutrals (white / near-black), one cyan accent, Geist and Geist Mono. */
+@font-face { font-family: "Geist"; src: url("fonts/Geist.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Geist Mono"; src: url("fonts/GeistMono.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
+:root, :root[data-theme="light"] {
+  --bg: #ffffff; --panel: #fafafa; --ink: #09090b; --ink-2: #3f3f46; --muted: #71717a; --line: #e4e4e7; --line-strong: #d4d4d8; --soft: #f4f4f5;
+  --accent: #0891b2; --accent-text: #0e7490; --accent-ink: #ffffff; --accent-soft: #cffafe; --btn: #0e7490; --btn-hover: #0891b2;
+  --ok: #047857; --ok-bg: #d1fae5; --warn: #b45309; --warn-bg: #fef3c7; --bad: #be123c; --bad-bg: #ffe4e6; --info: #0e7490; --info-bg: #cffafe; --idle: #52525b; --idle-bg: #f4f4f5;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .05), 0 10px 30px rgba(0, 0, 0, .07);
+  --mono: "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, monospace; --sans: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --radius: 12px;
+}
+:root[data-theme="dark"] {
+  --bg: #09090b; --panel: #111113; --ink: #fafafa; --ink-2: #d4d4d8; --muted: #a1a1aa; --line: #27272a; --line-strong: #3f3f46; --soft: #18181b;
+  --accent: #22d3ee; --accent-text: #67e8f9; --accent-ink: #042f3a; --accent-soft: rgba(34, 211, 238, .14); --btn: #0e7490; --btn-hover: #0891b2;
+  --ok: #34d399; --ok-bg: rgba(52, 211, 153, .14); --warn: #fbbf24; --warn-bg: rgba(251, 191, 36, .13); --bad: #fb7185; --bad-bg: rgba(251, 113, 133, .14); --info: #67e8f9; --info-bg: rgba(34, 211, 238, .14); --idle: #a1a1aa; --idle-bg: #18181b;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 14px 36px rgba(0, 0, 0, .45);
+}

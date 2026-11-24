@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>tuvl — AI that does the work. Rules it can't break.</title>
+  <meta name="description" content="tuvl is an AI-native company. We build and integrate AI-powered business solutions, and provide the software, platforms and tools to run them: ready-made suites, cloud.tuvl.io hosting and the open-source tuvl engine.">
+  <link rel="canonical" href="https://tuvl.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tuvl.io/">
+  <meta property="og:title" content="tuvl — AI that does the work. Rules it can't break.">
+  <meta property="og:description" content="An AI-native company: we build and integrate AI business solutions, and we open-sourced their core.">
+  <meta property="og:image" content="https://tuvl.io/assets/logo.png">
+  <link rel="icon" type="image/png" href="favicon-32.png">
+  <link rel="preload" href="fonts/Geist.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="tokens.css?v=2">
+  <link rel="stylesheet" href="site.css?v=4">
+  <script src="theme.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7NBSPKBZSP"></script>
+  <script src="analytics.js"></script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="feather.svg" alt="" width="26" height="28">tuvl</a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#solutions">Solutions</a>
+      <a href="#platform">Platform</a>
+      <a href="#services">Services</a>
+      <a href="#how">How we work</a>
+      <a href="#open-source">Open source</a>
+    </nav>
+    <span class="spacer"></span>
+    <button class="icon-btn" id="theme" aria-label="Toggle theme">☾</button>
+    <a class="btn nav-try" href="https://try.tuvl.online/?utm_source=tuvl.io&amp;utm_medium=nav">Try it live</a>
+    <a class="btn primary" href="#contact">Talk to us</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- Hero -->
+<div class="hero">
+  <div class="wrap">
+    <a class="pill" href="https://tuvl.org/?utm_source=tuvl.io&amp;utm_medium=hero_pill"><b>OPEN SOURCE</b> We open-sourced the core of every tuvl solution. Read it on tuvl.org →</a>
+    <h1>AI that does the work.<br><em>Rules it can't break.</em></h1>
+    <p class="lede">tuvl is an AI-native company. We build and integrate business solutions where AI agents do the work, and an engine makes sure they never step outside the rules you approved. Every step is checked before it runs and recorded while it does. We open-sourced that engine, so you never have to take our word for it.</p>
+    <div class="cta-row">
+      <a class="btn primary lg" href="https://try.tuvl.online/?utm_source=tuvl.io&amp;utm_medium=hero">Try our solutions</a>
+      <a class="btn lg" href="#different">Why it's different</a>
+    </div>
+    <div class="stats">
+      <div><b>Checked</b><span>before anything runs</span></div>
+      <div><b>Bounded</b><span>agents work inside a contract</span></div>
+      <div><b>Recorded</b><span>every step, every decision</span></div>
+      <div><b>Open</b><span>the core is on tuvl.org</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- Why different -->
+<section class="alt" id="different">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Why tuvl is different</span>
+      <h2>We don't let AI make the final call.</h2>
+      <p class="lede">AI is brilliant at reading, writing and judging. It should never be the one deciding what is allowed. So in a tuvl solution the jobs are split, and every hand-off between them is on the record.</p>
+    </div>
+    <div class="engine">
+      <div class="guarantees">
+        <div class="guarantee"><i>01</i><div><h3>The AI can't go off-script</h3><p>Every agent works inside a contract: what it may read, what it may decide, how long it may take and how much it may spend. Anything outside it is refused, not attempted.</p></div></div>
+        <div class="guarantee"><i>02</i><div><h3>Money and decisions need a person</h3><p>Limits, approvals and sign-offs are part of the workflow. The system waits for the right person, then carries on, even days later.</p></div></div>
+        <div class="guarantee"><i>03</i><div><h3>Every action has a receipt</h3><p>Each step is recorded: which agent, what it saw, which rule applied, who approved. Ask why something happened and you get an answer, not a guess.</p></div></div>
+        <div class="guarantee"><i>04</i><div><h3>The core is open source</h3><p>The engine that enforces all of this is public on <a href="https://tuvl.org/?utm_source=tuvl.io&amp;utm_medium=different">tuvl.org</a>. Read it, audit it, build on it.</p></div></div>
+      </div>
+
+      <div class="window" aria-label="Example: how the journal records one invoice">
+        <div class="window-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="title">journal · invoice INV-2041 (example)</span></div>
+        <ol class="receipt">
+          <li><time>09:14:02</time><span class="who ai">agent</span><span>Read the invoice: 12 fields extracted</span></li>
+          <li><time>09:14:03</time><span class="who rule">rule</span><span>Matched to its purchase order, amounts agree</span></li>
+          <li><time>09:14:03</time><span class="who rule">rule</span><span>Above the approval limit: the CFO must approve</span></li>
+          <li><time>09:14:03</time><span class="who wait">wait</span><span>Waiting for the CFO</span></li>
+          <li><time>11:40:51</time><span class="who person">person</span><span>CFO approved, with a comment</span></li>
+          <li><time>11:40:52</time><span class="who rule">rule</span><span>Added to the next payment run</span></li>
+        </ol>
+        <div class="verify"><span class="c"># the agent could read, extract and suggest.</span><br><span class="c"># it could not approve or pay. only the rules and a person could.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- What we do -->
+<section id="what">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">What we do</span>
+      <h2>Agents need a platform,<br>not a better prompt.</h2>
+      <p class="lede">An agent that shines in a demo falls apart inside a business: no limits, no approvals, no record of what it did, nowhere safe to run. That gap is platform engineering, not prompting. It is the layer we build, and everything we ship sits on it.</p>
+    </div>
+    <div class="grid g3 pillars">
+      <a class="card pillar" href="#solutions">
+        <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l2 2 4-4"/></svg></div>
+        <span class="tag">Software</span>
+        <h3>Agents already at work</h3>
+        <p>Business solutions where agents handle finance, HR, operations and customer work, with the limits, approvals and records already built in. Try them live.</p>
+        <span class="link">See the solutions →</span>
+      </a>
+      <a class="card pillar" href="#platform">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M7 18a4 4 0 0 1-.5-7.97A6 6 0 0 1 18 9a4.5 4.5 0 0 1 0 9z"/></svg></div>
+        <span class="tag">Platform</span>
+        <h3>cloud.tuvl.io</h3>
+        <p>Platform engineering you don't have to hire for. Build your solution and host it with us at an affordable cost: servers, database, domain and certificates included.</p>
+        <span class="link">See the platform →</span>
+      </a>
+      <a class="card pillar" href="#open-source">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6"/></svg></div>
+        <span class="tag open">Tools</span>
+        <h3>The tuvl engine</h3>
+        <p>The layer itself: contracts, budgets, approvals and a journal for every agent. The core of every tuvl solution, open-sourced on tuvl.org.</p>
+        <span class="link">Why we open-sourced it →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Solutions -->
+<section class="alt" id="solutions">
+  <div class="wrap">
+    <div class="try">
+      <div class="try-copy">
+        <span class="kicker">Solutions · try.tuvl.online</span>
+        <h2>Don't take our word for it.<br>Use our solutions.</h2>
+        <p class="lede">Our business solutions run live at try.tuvl.online: full systems with sample data and a demo user for every role, not slides or mock-ups. Open one in your browser, work through a real process, then talk to us about running it with your data.</p>
+        <div class="areas" aria-label="Areas covered">
+          <span>Finance and accounts payable</span><span>HR and payroll</span><span>Sales and operations</span><span>Documents and onboarding</span><span>Customer support</span><span>Compliance and approvals</span>
+        </div>
+      </div>
+      <div class="try-steps">
+        <div class="step"><h3>Pick a solution</h3><p>Business suites and smaller, focused solutions, each one a working system.</p></div>
+        <div class="step"><h3>Use it</h3><p>Sign in as any role and take a process from start to finish, approvals included.</p></div>
+        <div class="step"><h3>Make it yours</h3><p>We adapt it to your process, connect it to your systems and host it for you.</p></div>
+        <a class="btn primary lg" href="https://try.tuvl.online/?utm_source=tuvl.io&amp;utm_medium=solutions">Try our solutions live →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Platform -->
+<section id="platform">
+  <div class="wrap">
+    <div class="engine">
+      <div class="engine-copy">
+        <span class="kicker">Platform · cloud.tuvl.io</span>
+        <h2>Build your solution.<br>We'll host it, affordably.</h2>
+        <p class="lede">You don't need an infrastructure team to run AI-powered software. Build on the tuvl engine, or have us build it, and deploy it to cloud.tuvl.io with one command.</p>
+        <div class="guarantees">
+          <div class="guarantee"><i>01</i><div><h3>One command to go live</h3><p><span class="mono">tuvl deploy</span> ships the backend and its web UI together. No servers to set up.</p></div></div>
+          <div class="guarantee"><i>02</i><div><h3>Everything runs for you</h3><p>The engine, the database, your domain and HTTPS certificates are run and kept up to date for you.</p></div></div>
+          <div class="guarantee"><i>03</i><div><h3>Affordable by design</h3><p>Priced for small and growing businesses, not for enterprise contracts. Start small and grow.</p></div></div>
+          <div class="guarantee"><i>04</i><div><h3>No lock-in</h3><p>Every project is also an image and a Helm chart, so you can move it to your own infrastructure at any time.</p></div></div>
+        </div>
+        <div class="cta-row"><a class="btn primary" href="https://cloud.tuvl.io/?utm_source=tuvl.io&amp;utm_medium=platform">Open cloud.tuvl.io</a><a class="btn" href="#contact">Ask about pricing</a></div>
+      </div>
+
+      <div class="window" aria-label="Deploying a project to cloud.tuvl.io">
+        <div class="window-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="title">terminal</span></div>
+<pre class="code"><span class="c">$</span> tuvl validate
+<span class="s">✓</span> workflows, models and roles: all checked
+
+<span class="c">$</span> tuvl deploy
+<span class="c">→</span> building backend and web UI
+<span class="c">→</span> provisioning database
+<span class="c">→</span> issuing certificate
+<span class="s">✓</span> live at <span class="k">https://yourapp.tuvl.app</span>
+
+<span class="c"># runs, approvals and logs in the console</span>
+<span class="c"># at cloud.tuvl.io</span></pre>
+        <div class="verify"><span class="c"># already built your app?</span><br>bring it as it is: we host the engine,<br>the database and the UI together</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="alt" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Services</span>
+      <h2>We build and integrate. You run your business.</h2>
+      <p class="lede">For processes that are specific to your company, we design, build and connect the solution for you, then run it or hand it over.</p>
+    </div>
+    <div class="grid g3">
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5M3 17l9 5 9-5" opacity=".6"/></svg></div>
+        <h3>Build</h3>
+        <p>A new AI-native application, from the first spec to production: workflows, data, approvals and a user interface your team will actually use.</p>
+        <a class="link" href="#contact">Discuss a build →</a>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="6" cy="12" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="M8.7 10.7l6.6-3.4M8.7 13.3l6.6 3.4"/></svg></div>
+        <h3>Integrate</h3>
+        <p>Add AI agents and automation to the systems you already run, such as your ERP, mailbox, documents and portals, without replacing them.</p>
+        <a class="link" href="#contact">Discuss an integration →</a>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>Operate</h3>
+        <p>We run it for you on cloud.tuvl.io, or hand it to your team on your own infrastructure with the image, the Helm chart and the runbooks.</p>
+        <a class="link" href="#contact">Discuss operations →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- How we work -->
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">How we work</span>
+      <h2>What you approve is what gets built.</h2>
+      <p class="lede">Every solution starts as a written spec you review. The software is checked against it before it ships, so AI does the work and you stay in control.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Specify</h3><p>We write down the process with you: who does what, what is allowed, and where a person decides.</p></div>
+      <div class="step"><h3>Approve</h3><p>You sign off the spec. Any change needs a new approval, so scope and cost are never a surprise.</p></div>
+      <div class="step"><h3>Build and verify</h3><p>Workflows, tests and screens are built and checked against the approved spec before anything goes live.</p></div>
+      <div class="step"><h3>Ship and run</h3><p>Live on cloud.tuvl.io or on your servers, with a record of every action the system took and why.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Open source -->
+<section class="alt" id="open-source">
+  <div class="wrap">
+    <div class="oss">
+      <div style="display:grid;gap:14px">
+        <span class="kicker">Open source · tuvl engine</span>
+        <h2>We gave away the core of our business.</h2>
+        <p class="lede">Most companies guard the engine behind their products. Ours is public on tuvl.org under Apache 2.0: the same engine every tuvl solution runs on.</p>
+        <p class="why">Why? Software that runs your business should be open to inspection. Your developers should be able to build on it. And you should always be free to leave. We'd rather earn your business than lock you in.</p>
+        <div class="chips" aria-label="Engine capabilities">
+          <span class="chip">typed workflows</span><span class="chip">AI agents with budgets</span><span class="chip">human approvals</span><span class="chip">step-by-step journal</span><span class="chip">roles and scopes</span><span class="chip">REST · MCP</span>
+        </div>
+      </div>
+      <div class="oss-links">
+        <a class="primary" href="https://tuvl.org/?utm_source=tuvl.io&amp;utm_medium=oss">The tuvl engine <small>tuvl.org</small></a>
+        <a href="https://github.com/tuvl-io/tuvl">Source code <small>github.com/tuvl-io/tuvl</small></a>
+        <a href="https://pypi.org/project/tuvl/">Install <small>uv tool install "tuvl[standard]"</small></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <div class="wrap">
+    <div class="cta">
+      <span class="kicker">Talk to us</span>
+      <h2>Have a process worth automating?</h2>
+      <p>Tell us what the process is, who decides what, and what must never happen. We'll come back with a spec you can review, and a price for building and hosting it.</p>
+      <div class="cta-row" style="justify-content:center"><a class="btn primary lg" href="mailto:contact@tuvl.io">contact@tuvl.io</a><a class="btn lg" href="https://try.tuvl.online/?utm_source=tuvl.io&amp;utm_medium=contact">Try a solution first</a></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="brand" href="#top" style="color:var(--ink)"><img src="feather.svg" alt="" width="22" height="24">tuvl</a>
+      <p style="margin-top:10px" class="mono">AI that does the work. Rules it can't break.</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="#solutions">Solutions</a><a href="https://try.tuvl.online/?utm_source=tuvl.io&amp;utm_medium=footer">Try live</a><a href="https://cloud.tuvl.io/?utm_source=tuvl.io&amp;utm_medium=footer">Cloud</a><a href="#services">Services</a><a href="https://tuvl.org/?utm_source=tuvl.io&amp;utm_medium=footer">Open source</a><a href="mailto:security@tuvl.io">Security</a>
+    </nav>
+    <p class="mono">© tuvl</p>
+  </div>
+</footer>
+
+<div class="draft">LOCAL DRAFT · not published</div>
+
+<script>
+  const btn = document.getElementById("theme"), root = document.documentElement;
+  const paint = () => { const d = root.dataset.theme === "dark"; btn.textContent = d ? "☀" : "☾"; document.querySelector('meta[name="theme-color"]').setAttribute("content", d ? "#09090b" : "#ffffff"); };
+  btn.addEventListener("click", () => { const t = root.dataset.theme === "dark" ? "light" : "dark"; root.dataset.theme = t; try { localStorage.setItem("tuvl.theme", t); } catch {} paint(); });
+  paint();
+</script>
+</body>
+</html>
