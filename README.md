@@ -1,6 +1,6 @@
 # tuvl.io
 
-The company website at [tuvl.io](https://tuvl.io). It's a static page: plain HTML and CSS, with no build step.
+The company website at [tuvl.io](https://tuvl.io). It's a static page: plain HTML and CSS, served as it is.
 
 - Try our solutions at [try.tuvl.online](https://try.tuvl.online)
 - Build and host them at [cloud.tuvl.io](https://cloud.tuvl.io)
